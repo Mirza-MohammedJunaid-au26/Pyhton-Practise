@@ -1,0 +1,19 @@
+# Q1)
+
+# Ans : O(n^n)
+
+# Q2)
+
+# Ans : O(n)
+
+# Q3)
+
+# Ans : O(n)
+
+# Q4)
+
+# Ans :  O(n)
+
+# Q5)
+
+# Ans : O(n)

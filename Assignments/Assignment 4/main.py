@@ -48,28 +48,41 @@ obj1 = Biggest()
 class Pattern:
 
     def __init__(self):
-        self.aestrik="*"
-        self.dot="."
+        # self.aestrik="*"
+        # self.dot="."
         self.pattern_inp = int(input("Enter :"))
 
-        for i in range(self.pattern_inp,0,-2):
-            for j in range(1,self.pattern_inp+1):
-                a=j-i
-                if a==0:
-                    a = 1
-            print(self.aestrik*a,self.dot*i,self.aestrik*a)
-
-        for i in range(0,self.pattern_inp+1,3):
-            for j in range(self.pattern_inp,0,-2):
-                a = j-1
-                if i==0:
-                    self.dot="*"
-                    i = 1
-                else:
-                    print(self.aestrik*a,self.dot*i,self.aestrik*a)
-                    
+        a = 1
         
-            
-            
+        for i in range(self.pattern_inp,0,-2):
+            print("*"*a,"."*i,"*"*a)
+            a=a+1
+
+        for i in range(0,self.pattern_inp+1):
+            if i==0:
+                n = self.pattern_inp+2
+                print("* "*n)
+            elif i%2==0:
+                pass
+            else:
+                a=a-1
+                print("*"*a,"."*i,"*"*a)          
 
 obj2 = Pattern()
+
+
+# 4) Predict the output and time complexity of the given code?
+
+# N = int(input())
+# L = []
+
+# while N > 0:
+
+#     L.append(N%2)
+ 
+#     N = N//2
+
+# print( L[::-1] )
+
+# Time Complexity = O(n)
+

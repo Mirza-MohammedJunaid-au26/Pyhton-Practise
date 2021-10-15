@@ -32,7 +32,7 @@ if not_found == 0:
 # Ans :
 
 A = [1,2,2,3,4,5,5,6,6,7]
-inp = int(input("Enter :"))
+inp = int(input("Enter (give input 2 or 5 or 6):"))
 st = 0
 en = len(A)-1
 count1= []
@@ -45,7 +45,9 @@ while st <= en:
     if A[mid] == inp:
         not_found=1
         count1.append(mid)
+        st = mid+1
         continue
+
 
     if A[mid] < inp:
         st = mid+1
@@ -56,4 +58,5 @@ while st <= en:
 if not_found == 0:
     print("Not Found")
 
-print(count1)
+print("Start Index :",count1[0])
+print("Last Index :",count1[len(count1)-1])

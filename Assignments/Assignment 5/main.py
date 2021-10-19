@@ -14,3 +14,26 @@ while i<len(A):
     i=i+1
 
 # Time Complexity : O(n)
+
+# Q - 2 ) Solve question 1 , but use binary search. Implement binary search using recursion.
+
+def binarySearch(arr,st,en,k):
+
+        if st>en:
+            return -1
+
+        mid = st+en//2
+
+        if A[mid]==k and A[mid+1]==k:
+            return mid+1
+        
+        if arr[mid] > k:
+            return binarySearch(arr,st,mid-1,k)
+        
+        if arr[mid] < k:
+            return binarySearch(arr,st,mid+1,k)
+        
+print(binarySearch(A,0,len(A)-1,inp))
+
+# Time Complexity : O(logn)
+

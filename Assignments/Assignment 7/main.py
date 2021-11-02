@@ -19,9 +19,30 @@ print(RomanToInt(st))
 
 # Q.2) 
 
-count=0
-for i in range(len(nums)):
-    if nums[i] != val:
-        nums[count] = nums[i]
-            count +=1
-    return count
+def removeElement(nums, val):
+   count = 0
+   for i in range(len(nums)):
+      if nums[i] != val:
+         nums[count] = nums[i]
+         count += 1
+   return count
+
+nums = [1,2,2,3,3,4,4,5]
+val = 4
+print(removeElement(nums,val))
+
+# Q.3)
+
+def maxDepth(s):
+   stack = []     
+   max_depth = 0
+   for c in s:
+      if c == '(':
+         stack.append(c)                
+         max_depth = max(max_depth, len(stack))
+      elif c == ')':
+         stack.pop()
+   return max_depth
+
+s = "(1+(2*3)+((8)/4))+1"
+print(maxDepth(s))

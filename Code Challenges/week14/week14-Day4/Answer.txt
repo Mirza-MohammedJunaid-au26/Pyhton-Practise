@@ -1,0 +1,36 @@
+Question 1. Write short note on CPU scheduling algorithms
+
+Answer : 
+A typical process involves both I/O time and CPU time. In a uni programming system like MS-DOS, time spent waiting for I/O is wasted and CPU is free during this time. In multi programming systems, one process can use CPU while another is waiting for I/O. This is possible only with process scheduling.
+
+Types of CPU scheduling Algorithm
+-> First Come First Serve (FCFS)
+-> Shortest-Job-First (SJF) Scheduling.
+-> Shortest Remaining Time.
+-> Priority Scheduling.
+-> Round Robin Scheduling.
+-> Multilevel Queue Scheduling.
+
+
+Question 2. What is preemptive vs non preemptive scheduling algos
+
+Answer :
+      Preemptive Scheduling	                                   Non-Preemptive Scheduling
+                                  
+Resources are allocated according                         Resources are used and then held by 
+to the cycles for a limited time.	                      the process until it gets terminated.
+
+The process can be interrupted,                           The process is not interrupted until 
+ even before the completion.	                              its life cycle is complete.
+ 
+Starvation may be caused, due to the                      Starvation can occur when a process with 
+insertion of priority process in the queue.	              large burst time occupies the system.
+
+Maintaining queue and remaining 	                        No such overheads are required.
+time needs storage overhead.
+
+
+Question 3. Write the best and/or practical scheduling algo, with reason ?
+
+Answer :
+Sometimes FCFS algorithm is better than the other in short burst time while Round Robin is better for multiple processes in every single time. However, it cannot be predicted what process will come after. Average Waiting Time is a standard measure for giving credit to the scheduling algorithm.

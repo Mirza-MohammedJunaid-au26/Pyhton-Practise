@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="heading">STUDENT REGISTRATION FORM</h1>
+    </header>
+    <form>
+        <label for="firstName">FIRST NAME:</label>
+        <input type="text" id="firstName" placeholder="Enter First Name" size="27">
+        <span>(max 30 characters A-Z and a-z)</span>
+        <br>
+        <label for="lastName">LAST NAME: </label>
+        <input type="text" id="lastName" placeholder="Enter Last Name" size="27">
+        <span>(max 30 characters A-Z and a-z)</span>
+        <br>
+        <label for="dob">DATE OF BIRTH: </label>
+        <input type="date" name="" id="">
+        <br>
+        <label for="gmail">EMAIL ID: </label>
+        <input type="email" id="gmail" size="30">
+        <br>
+        <label for="mob">MOBILE NO: </label>
+        <input type="tel" id="mob" placeholder="Enter Mobile no" size="27">
+        <span>(10 digit number)</span>
+        <br>
+        <label>GENDER: </label>
+        <input type="radio" id="female" name="gen" value="Female">
+        <label for="female">FEMALE :</label>
+        <input type="radio" id="male" name="gen" value="Male">
+        <label for="male">MALE</label>
+        <br>
+        <label for="address">ADDRESS :</label><br>
+        <textarea id="address" cols="50" rows="5"></textarea>
+        <br>
+        <label for="city">CITY: </label>
+        <input type="text" id="city" placeholder="Enter your city name" size="27">
+        <br>
+        <label for="pin">PINCODE: </label>
+        <input type="tel" id="pin" placeholder="Enter pin code" size="27">
+        <span>(6 digit number)</span>
+        <br>
+        <label for="state">STATE: </label>
+        <input type="tel" id="state" placeholder="Enter your state name" size="27">
+        <br>
+        <label for="country">COUNTRY: </label>
+        <input type="tel" id="country" placeholder="Enter your Country Name" size="27">
+        <br>
+        <label for="">QUALIFICATION :</label>
+        <table>
+            <tr>
+                <th>S.NO</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Class X</td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Class XII</td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Graduation</td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Masters</td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+        </table>
+        <label>COURSES: </label>
+        <input type="radio" id="bca" name="course">
+        <label for="bca">BCA :</label>
+        <input type="radio" id="bcom" name="course">
+        <label for="bca">B.Com :</label>
+        <input type="radio" id="b.Sc" name="course">
+        <label for="bca">B.Sc :</label>
+        <input type="radio" id="ba" name="course">
+        <label for="bca">B.A :</label>
+
+        <br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+
+</html>

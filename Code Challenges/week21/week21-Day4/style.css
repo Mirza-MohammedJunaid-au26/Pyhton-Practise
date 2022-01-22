@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Bungee', cursive;
+    color: magenta;
+    background-image: linear-gradient(to right,pink,violet);
+}
+
+h1{
+    text-align: center;
+    padding-top: 50px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.calculator-box{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+}
+
+input{
+    margin-bottom: 25px;
+    height: 40px;
+    width: 350px;   
+    font-size: 2rem;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+button{
+    font-size: 1.5rem;
+    padding: 10px 25px;
+    border: none;
+    color: magenta;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+button:hover{
+    background: magenta;
+    color: #fff;
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: linear-gradient( to right, violet,pink);
+}
+
+.queue-box{
+    width: 40vw;
+}
+
+.heading{
+    font-size: 5rem !important;
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgb(125, 53, 184);
+    text-align: center;
+    font-family: 'Concert One', cursive;  
+    color: rgb(125, 53, 184);
+}
+
+h3{
+    margin: 20px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    color: purple;
+}
+
+input{
+    height: 35px;
+    width: 400px;
+    display: block !important;
+    margin: auto !important;
+    margin-top: 50px;
+    padding-left: 5px;
+    font-size: 1.5rem !important;
+    font-weight: 800;
+    outline: none;
+}
+
+.btn-grp{
+    margin-top: 10px;
+   text-align: center;
+}
+
+button{
+    padding: 8px 20px;
+    font-size: 1rem;
+    font-weight: 800;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(125, 53, 184);
+    color: white;
+}
+
+button:hover{
+    color: rgb(125, 53, 184);
+    background: white ;
+    letter-spacing: 1px;
+    transform: scale(1.02);
+    transition: .3s ease-in-out;
+}
+
+#ansSection{
+    margin-top: 50px !important;
+    text-align: center;
+    color: red;
+}

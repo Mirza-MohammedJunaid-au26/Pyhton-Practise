@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rowdies', cursive;
+    letter-spacing: 1px;
+}
+
+body{
+    background-image: linear-gradient(to right,lightblue,pink);
+}
+
+.heading{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5rem;
+    color: rgb(21, 56, 121);
+}
+
+.sub-heading{
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(21, 56, 121);
+}
+
+#result{
+    text-align: center;
+    margin: 30px 0;
+    color: rgb(21, 56, 121);
+}
+
+.game-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    margin-top: 50px;
+}
+
+#user-box,#computer-box{
+    height: 400px;
+    width: 400px;
+    border-radius: 12px;
+    /* border: 2px solid #000; */
+}
+
+.img{
+    height: 350px;
+    width: 350px;
+}
+
+.intro{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.game-btn{
+    margin-top: 50px;
+    text-align: center;
+}
+
+button{
+    border: none;
+    background-color: black;
+    color: blanchedalmond;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.fas{
+    margin-right: 10px;
+}
